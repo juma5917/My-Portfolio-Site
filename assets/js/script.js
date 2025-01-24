@@ -46,3 +46,56 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#6c757d" },
+    shape: { type: "triangle" },
+    opacity: { value: 0.5 },
+    size: { value: 5 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#6c757d",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: { enable: true, speed: 4 },
+  },
+});
+particlesJS("particles-js2", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#6c757d" },
+    shape: { type: "triangle" },
+    opacity: { value: 0.5 },
+    size: { value: 5 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#6c757d",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: { enable: true, speed: 4 },
+  },
+});
+particlesJS("particles-js3", {
+  particles: {
+    number: { value: 100 },
+    color: { value: "#6c757d" },
+    shape: { type: "triangle" },
+    opacity: { value: 0.5 },
+    size: { value: 5 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#6c757d",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: { enable: true, speed: 4 },
+  },
+});
