@@ -1117,3 +1117,36 @@ textarea.contact-input {
     transform: translateY(0px) rotate(0deg);
   }
 }
+
+/* Floating Shapes (Optional Decorative Element) */
+.floating-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0; /* Behind everything */
+  pointer-events: none; /* Allow clicks through */
+}
+
+.floating-shapes .shape {
+  position: absolute;
+  width: 30px; /* Smaller shapes */
+  height: 30px;
+  background-color: hsla(230, 52%, 63%, 0.2); /* Subtle glaucous */
+  opacity: 0.5;
+  border-radius: 20%; /* Slightly rounded squares */
+  animation: float 12s infinite ease-in-out alternate; /* Slower, alternating animation */
+}
+.floating-shapes .shape1 { top: 15%; left: 10%; animation-delay: 0s; animation-duration: 10s; }
+.floating-shapes .shape2 { top: 60%; left: 80%; animation-delay: 4s; animation-duration: 14s; width: 45px; height: 45px; }
+.floating-shapes .shape3 { top: 75%; left: 25%; animation-delay: 7s; animation-duration: 11s; background-color: hsla(7, 96%, 61%, 0.15); } /* Subtle orange */
+.floating-shapes .shape4 { top: 30%; left: 50%; animation-delay: 2s; animation-duration: 13s; width: 25px; height: 25px; border-radius: 50%; } /* Circle */
+.floating-shapes .shape5 { top: 90%; left: 60%; animation-delay: 5s; animation-duration: 9s; }
+
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg) scale(1); }
+  100% { transform: translateY(-30px) rotate(45deg) scale(1.1); }
+}
